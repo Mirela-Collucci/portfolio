@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e8b5b5;
+
+}
+
+.logotipo-logo {
+    width: 190px;
+    margin-top: 20px;
+}
+
+/* -------------------------------------------------------------CABEÇALHO------------------------------------------------------------------------------------------- */
+/* Ajustar o z-index do header para garantir que o menu esteja acima do carrossel */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #dd8686;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+    z-index: 1000;
+    /* Garanta que o header tenha um z-index maior que o carrossel */
+}
+
+h1 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Garantir que o carrossel não sobreponha outros elementos */
+#carouselExampleFade {
+    margin-top: 100px;
+    /* Ajustar conforme a altura do header */
+    width: 100%;
+    overflow: hidden;
+    /* Garante que não haja barras de rolagem */
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+}
+
+.carousel-inner {
+    width: 100%;
+}
+
+.carousel-item img {
+    width: 100%;
+    /* Faz com que as imagens ocupem toda a largura do carrossel */
+    height: auto;
+    /* Mantém a proporção das imagens */
+}
+
+
+.topo-conteudo {
+    width: 100%;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+nav {
+    padding: 40px 20px 40px 0;
+}
+
+.menu {
+    list-style: none;
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+.search-box-input {
+    margin: 0;
+    padding: 6px;
+}
+
+
+.menu a {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+}
+
+.menu a:hover {
+
+    font-weight: bold;
+    /* border-top: 1px solid #813566;
+    padding: 10px;
+    border-bottom:1px solid #813566;
+    color: #813566; */
+}
+
+form {
+    border-radius: 0.3em;
+    padding: 0.3em;
+
+}
+
+form input,
+form button {
+    font-size: 1.4em;
+    border-radius: 0.2em;
+    border: none;
+    padding: 0.2em;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+form button {
+    cursor: pointer;
+    background: none;
+    color: rgb(238, 109, 180);
+
+}
+
+form button:hover {
+    background-color: rgb(238, 109, 180);
+    color: aliceblue;
+}
+
+main {
+    width: 100%;
+    /* Garante que o main ocupe toda a largura disponível */
+    padding: 100px 0;
+    /* Ajuste o padding conforme necessário */
+    margin: 0 auto;
+}
+
+.posts {
+    display: flex;
+    padding: 20px 490px 20px 40px;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.posts div {
+    width: 250px;
+}
+
+.posts img {
+    height: 400px;
+    width: 700px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 4%;
+}
+
+h4 {
+    /* text-align: center; */
+    color: black;
+    font-family: alice;
+    font-size: 20px;
+    /* font-weight: 200; */
+    font-style: normal;
+    padding: 0 0 0 100px;
+
+}
+
+h2 {
+    text-align: center;
+    color: black;
+    font-family: alice;
+    font-size: 70px;
+    /* font-weight: 200; */
+    font-style: normal;
+    padding: 5px 0 0 5px;
+    background-color: #dd8686;
+
+}
+
+
+.textoFim{
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black ;
+    font-size: 19px;
+    margin-left: 400px;
+    font-style: italic; 
+    width: 700px;
+    background-color: #dd8686; 
+  
+}
+
+.boxes {
+    display: flex;
+    padding: 20px 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.boxes div {
+    width: 300px;
+
+}
+
+.boxes img {
+    height: 200px;
+    width: 300px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 4%;
+}
+
+p {
+    text-align: center;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #dd8686;
+    display: flex;
+    flex-direction: column;
+    /* Alinha os itens em coluna */
+    align-items: center;
+    /* Centraliza os itens horizontalmente */
+    width: 100%;
+    padding: 20px 0;
+    /* Adiciona um pouco de padding vertical */
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    /* Alinha os ícones horizontalmente */
+    margin-bottom: 10px;
+    /* Espaçamento entre ícones e o texto do rodapé */
+}
+
+.redes {
+    margin: 0 10px;
+    /* Ajusta o espaçamento entre ícones */
+    height: 30px;
+    width: 30px;
+}
+
+.texto-rodape {
+    font-family: Raleway;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    color: black;
+    text-transform: uppercase;
+    text-align: center;
+    /* Garante que o texto está centralizado */
+}

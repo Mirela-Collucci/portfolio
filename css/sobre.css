@@ -1,0 +1,94 @@
+nav{
+    padding: 40px 20px 40px 0;
+}
+
+.banner {
+    height: 400px;
+    background-image: url(../imagens/banner\ quem\ somos.png);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 200px;
+}
+.texto-banner {
+
+    width: 1450px;
+    margin: auto;
+    color: rgb(235, 221, 221);
+    padding-top: 50px;
+}
+
+.texto-banner h4 {
+    font-family: raleway;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 800;
+    text-align: center;
+}
+
+.menu{
+    list-style: none;
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+.boxes div {
+    width: 800px;
+    padding: 0 0 0 530px;
+}
+
+.boxes img {
+    height: 300px;
+    width: 230px;
+}
+
+
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    font-size: 19px;
+    text-align: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+
+/* Inicio do rodape */
+
+footer {
+    background-color: #dd8686;
+    display: flex;
+    flex-direction: column;
+    /* Alinha os itens em coluna */
+    align-items: center;
+    /* Centraliza os itens horizontalmente */
+    width: 100%;
+    padding: 20px 0;
+    /* Adiciona um pouco de padding vertical */
+}
+.icon {
+    display: flex;
+    justify-content: center; /* Alinha os ícones horizontalmente */
+    margin-bottom: 10px; /* Espaçamento entre ícones e o texto do rodapé */
+}
+
+.redes {
+    margin: 0 10px; /* Ajusta o espaçamento entre ícones */
+    height: 30px;
+    width: 30px;
+}
+
+.texto-rodape {
+    font-family: Raleway;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    color: black;
+    text-transform: uppercase;
+    text-align: center;
+    /* Garante que o texto está centralizado */
+}
